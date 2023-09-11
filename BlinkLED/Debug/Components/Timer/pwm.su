@@ -1,0 +1,12 @@
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2013:22:void LL_TIM_EnableCounter(TIM_TypeDef*)	16	static
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2583:22:void LL_TIM_CC_EnableChannel(TIM_TypeDef*, uint32_t)	16	static
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:3196:22:void LL_TIM_OC_SetCompareCH1(TIM_TypeDef*, uint32_t)	16	static
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:4626:22:void LL_TIM_EnableAllOutputs(TIM_TypeDef*)	16	static
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:5447:22:void LL_TIM_ClearFlag_UPDATE(TIM_TypeDef*)	16	static
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:5458:26:uint32_t LL_TIM_IsActiveFlag_UPDATE(TIM_TypeDef*)	16	static
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:5913:22:void LL_TIM_EnableIT_UPDATE(TIM_TypeDef*)	16	static
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:6578:22:void LL_TIM_GenerateEvent_UPDATE(TIM_TypeDef*)	16	static
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h:952:22:void LL_GPIO_TogglePin(GPIO_TypeDef*, uint32_t)	24	static
+../Components/Timer/pwm.cpp:13:6:static void pwm::HAL::init()	8	static
+../Components/Timer/pwm.cpp:20:6:static void pwm::HAL::on(int)	16	static
+../Components/Timer/pwm.cpp:30:17:void TIM1_UP_TIM16_IRQHandler()	8	static
