@@ -31,5 +31,6 @@ extern "C" void TIM1_UP_TIM16_IRQHandler(void)
 {
 	LL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
 	LL_TIM_ClearFlag_UPDATE(TIM1);
+
 }
 
