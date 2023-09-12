@@ -16,15 +16,15 @@ void pwm::HAL::init(){
 	LL_TIM_EnableCounter(TIM1);
 	LL_TIM_GenerateEvent_UPDATE(TIM1);
 }
-133
+
 void pwm::HAL::on(int pulse){
 	LL_TIM_OC_SetCompareCH1(TIM1, pulse);
-		LL_TIM_ClearFlag_UPDATE( TIM1 );
-		while ( LL_TIM_IsActiveFlag_UPDATE( TIM1 ) == 0u ){}
-		LL_TIM_ClearFlag_UPDATE( TIM1 );
-		TIM1->BDTR |= LL_TIM_OSSI_ENABLE;
-		LL_TIM_EnableAllOutputs( TIM1 );
-		LL_TIM_EnableIT_UPDATE( TIM1 );
+	LL_TIM_ClearFlag_UPDATE( TIM1 );
+	while ( LL_TIM_IsActiveFlag_UPDATE( TIM1 ) == 0u ){}
+	LL_TIM_ClearFlag_UPDATE( TIM1 );
+	TIM1->BDTR |= LL_TIM_OSSI_ENABLE;
+	LL_TIM_EnableAllOutputs( TIM1 );
+	LL_TIM_EnableIT_UPDATE( TIM1 );
 }
 
 extern "C" void TIM1_UP_TIM16_IRQHandler(void)
