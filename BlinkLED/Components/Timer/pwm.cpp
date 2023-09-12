@@ -16,7 +16,7 @@ void pwm::HAL::init(){
 	LL_TIM_EnableCounter(TIM1);
 	LL_TIM_GenerateEvent_UPDATE(TIM1);
 }
-
+133
 void pwm::HAL::on(int pulse){
 	LL_TIM_OC_SetCompareCH1(TIM1, pulse);
 		LL_TIM_ClearFlag_UPDATE( TIM1 );
